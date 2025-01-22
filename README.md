@@ -1,6 +1,6 @@
-# PI_DeepONet_Static_Structural_Response
+# PI_DeepONet_Structural_Response_Prediction
 
-This repository contains configurations and code for implementing structural analysis using [**DeepXDE**](https://deepxde.readthedocs.io/) with both PaddlePaddle and TensorFlow backends. The configurations are tailored for the following structures:  
+This repository contains configurations and code for evaluation structural response using [**DeepXDE**](https://deepxde.readthedocs.io/) with both PaddlePaddle and TensorFlow backends. The configurations are tailored for the following structures:  
 1. **2D Beam Structure**  
 2. **KW51 Structure**
 
@@ -51,6 +51,11 @@ Modify the model file to select the required loss function (either DD or DD + EC
 
 ## KW51 Structure
 
+### Abaqus Model
+The Abaqus model for the **KW51 structure** is also included in this repository.  
+- This model has been developed and validated.  
+- The data provided in the `Data` folder (stiffness matrix, inputs, outputs, etc.) has been generated based on this validated Abaqus model.
+  
 ### Configuration
 - **Backend**: TensorFlow  
 - **Strategy**: "Independent" DeepONet Strategy  
@@ -62,11 +67,6 @@ The `Data` folder contains:
 - DD Loss  
 - DD + EC Loss  
 - DD + Schur Loss
-
-### Abaqus Model
-The Abaqus model for the **KW51 structure** is also included in this repository.  
-- This model has been developed and validated.  
-- The data provided in the `Data` folder (stiffness matrix, inputs, outputs, etc.) has been generated based on this validated Abaqus model.
 
 ### Required Modifications
 
