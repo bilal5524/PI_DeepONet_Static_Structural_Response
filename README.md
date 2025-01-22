@@ -62,7 +62,7 @@ The `Data` folder contains:
 - DD Loss  
 - DD + EC Loss  
 - DD + Schur Loss
-- 
+
 ### Abaqus Model
 The Abaqus model for the **KW51 structure** is also included in this repository.  
 - This model has been developed and validated.  
@@ -85,7 +85,6 @@ Update the loss function file to apply custom PI loss functions:
 based on the `losses.py` file in this repository.
 
 ---
-
 
 ## Notes
 - Ensure that all file paths and configurations match your local Python environment.  
